@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="vida.js" defer></script>
+    <title>Muebles Aurgi</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logoBueno.png" alt="Logo de Aurgi" width="200" height="85">
+            <section>
+                <h1>Bienvenido a Aurgi</h1>
+                <h2>Muebles artesanales hechos a medida</h2>
+            </section>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#about">Envía tu CV</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home"></div>
+        <article class="presentEmpresa" >
+            <section>
+                <h1>Sobre nosotros</h1>
+                <p>Aurgi es una empresa dedicada a la fabricación de muebles artesanales hechos a medida. Nos enorgullece ofrecer productos de alta calidad y un servicio personalizado a nuestros clientes.</p>
+                <article class="caracteristicas">
+                    <ul>
+                        <li>
+                            Estamos ubicados en Arjona, Jaén
+                        </li>
+                        <li>
+                            Productos de alta calidad y durabilidad
+                        </li>
+                        <li>
+                            Contamos con un equipo de profesionales altamente capacitados
+                        </li>
+                        <li>
+                            Ofrecemos un servicio personalizado y atención al cliente excepcional
+                        </li>
+                        <li>
+                            Nos comprometemos con la sostenibilidad y el respeto al medio ambiente
+                        </li>
+                    </ul>
+                    <img src="imagen4.jpg" alt="Imagen de la empresa Aurgi" >
+                </article>
+            </section>
+        </article>
+        <div class="carruselCont" id="galeria">
+            <h1>Galería de fotos</h1>
+            <article class="carrusel">                
+                <div class="pista">
+                    <img src="LogoAurgi.png" alt="">
+                    <img src="logoBueno.png" alt="">
+                    <img src="imagen4.jpg" alt="">
+                </div>
+                <button class="anterior">&#8249;</button>
+                <button class="siguiente">&#8250;</button>
+            </article>
+        </div>
+
+        <form id="cvForm">
+            <label for="nombre">Nombre:
+                <input type="text" id="nombre" name="nombre" required>
+            </label>
+            <label for="apellido">Apellido:
+                <input type="text" id="apellido" name="apellido" required>
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="cv">Adjuntar CV:
+                <input type="file" id="cv" name="cv" required>
+            </label>
+            <label for="comentarios">Comentarios:
+                <input type="text" id="comentarios" name="comentarios" required>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer id="contacto">
+        <article class="contactos">
+            <p><i class="fa-solid fa-envelope"></i>Email: mueblesaurgi@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i>C/ Genil (Pol. Ind. Cruz de Piedra), Arjona, Jaén</p>
+        </article>
+        <img src="logoBueno.png" alt="Logo de Aurgi" width="250" height="120">
+        <article class="contactos">
+            <p><i class="fa-solid fa-phone"></i>Teléfono: 953 518 071</p>
+            <p>&copy; 2024 Aurgi. Todos los derechos reservados.</p>
+        </article>
+    </footer>
+</body>
+</html>
