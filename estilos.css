@@ -14,7 +14,8 @@ header{
     height: 85px;
     padding: 0 6.5%;
     background-color: #461a22;
-    border-bottom: 1px solid #371b20;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg, #5c3a1e, #b07034, #e0b878, #b07034, #5c3a1e) 1;
     color: #E5C384;
     font-family:'Cormorant Garamond', serif;
     display: flex;
@@ -25,6 +26,7 @@ header{
     top: 0;
     z-index: 1000;
 }
+
 header div{
     display: flex;
     align-items: center;
