@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="LogoMejorado.jpg">
     <script src="vida.js" defer></script>
     <title>Muebles Aurgi</title>
 </head>
@@ -20,15 +21,37 @@
         <nav>
             <ul>
                 <li><a href="#home">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#galeria">Galería</a></li>
-                <li><a href="#about">Envía tu CV</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="home"></div>
-        <article class="presentEmpresa" >
+        <!--Inicio-->
+        <section class="inicio" id="home">
+            <h1>Inicio</h1>
+        </section>
+        <!--Servicios-->
+        <section class="servicios" id="servicios">
+            <h1>Servicios</h1>
+        </section>
+        <!--Galería de fotos-->
+        <div class="carruselCont" id="galeria">
+            <h1>Galería de fotos</h1>
+            <article class="carrusel">                
+                <div class="pista">
+                    <img src="LogoAurgi.png" alt="">
+                    <img src="logoBueno.png" alt="">
+                    <img src="imagen4.jpg" alt="">
+                </div>
+                <button class="anterior">&#8249;</button>
+                <button class="siguiente">&#8250;</button>
+            </article>
+        </div>
+         <!--Sobre nosotros-->
+        <article class="presentEmpresa" id="about">
             <section>
                 <h1>Sobre nosotros</h1>
                 <p>Aurgi es una empresa dedicada a la fabricación de muebles artesanales hechos a medida. Nos enorgullece ofrecer productos de alta calidad y un servicio personalizado a nuestros clientes.</p>
@@ -54,38 +77,9 @@
                 </article>
             </section>
         </article>
-        <div class="carruselCont" id="galeria">
-            <h1>Galería de fotos</h1>
-            <article class="carrusel">                
-                <div class="pista">
-                    <img src="LogoAurgi.png" alt="">
-                    <img src="logoBueno.png" alt="">
-                    <img src="imagen4.jpg" alt="">
-                </div>
-                <button class="anterior">&#8249;</button>
-                <button class="siguiente">&#8250;</button>
-            </article>
-        </div>
-
-        <form id="cvForm">
-            <label for="nombre">Nombre:
-                <input type="text" id="nombre" name="nombre" required>
-            </label>
-            <label for="apellido">Apellido:
-                <input type="text" id="apellido" name="apellido" required>
-            </label>
-            <label for="email">Email:
-                <input type="email" id="email" name="email" required>
-            </label>
-            <label for="cv">Adjuntar CV:
-                <input type="file" id="cv" name="cv" required>
-            </label>
-            <label for="comentarios">Comentarios:
-                <input type="text" id="comentarios" name="comentarios" required>
-            </label>
-            <button type="submit">Enviar</button>
-        </form>
     </main>
+
+    <!--Contacto-->
     <footer id="contacto">
         <article class="contactos">
             <p><i class="fa-solid fa-envelope"></i>Email: mueblesaurgi@gmail.com</p>
