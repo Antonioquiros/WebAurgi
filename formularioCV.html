@@ -15,7 +15,6 @@
             <img src="logoBueno.png" alt="Logo de Aurgi" width="200" height="85">
             <section>
                 <h1>Bienvenido a Aurgi</h1>
-                <h2>Muebles artesanales hechos a medida</h2>
             </section>
         </div>
         <nav>
@@ -31,65 +30,132 @@
     <main>
         <!--Inicio-->
         <section class="inicio" id="home">
-            <h1>Inicio</h1>
+            <div class="hero">
+                <div class="hero-contenido">
+                    <span class="hero-etiqueta">Carpintería artesanal · Arjona, Jaén</span>
+                    <h2>Muebles a medida que <em>dan vida</em> a tu hogar</h2>
+                    <p>Modernizamos tu hogar usando la belleza de la madera. Diseñamos y fabricamos cada pieza a tu medida, con un trato cercano y personalizado.</p>
+                    <div class="hero-botones">
+                        <a href="#contacto" class="btn btn-principal">¡Pide presupuesto!</a>
+                        <a href="#galeria" class="btn btn-secundario">Ver nuestros trabajos</a>
+                    </div>
+                </div>
+
+                <ul class="hero-ventajas">
+                    <li><i class="fa-solid fa-ruler-combined"></i> Diseño a medida</li>
+                    <li><i class="fa-solid fa-tree"></i> Madera de calidad</li>
+                    <li><i class="fa-solid fa-hammer"></i> Trabajo artesanal</li>
+                    <li><i class="fa-solid fa-handshake"></i> Atención personalizada</li>
+                </ul>
+            </div>
         </section>
         <!--Servicios-->
         <section class="servicios" id="servicios">
-            <h1>Servicios</h1>
+            <span class="seccion-etiqueta">Lo que hacemos</span>
+            <h2 class="seccion-titulo">Nuestros servicios</h2>
+            <p class="seccion-intro">Cada proyecto es único. Diseñamos y fabricamos a tu medida, desde la primera visita hasta la instalación.</p>
+
+            <div class="servicios-grid">
+                <article class="servicio">
+                    <div class="servicio-icono"><i class="fa-solid fa-kitchen-set"></i></div>
+                    <h3>Cocinas a medida</h3>
+                    <p>Aprovechamos cada centímetro con diseños funcionales y acabados en madera de calidad.</p>
+                </article>
+
+                <article class="servicio">
+                    <div class="servicio-icono"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Armarios empotrados</h3>
+                    <p>Armarios y vestidores adaptados a tu espacio, sin huecos perdidos.</p>
+                </article>
+
+                <article class="servicio">
+                    <div class="servicio-icono"><i class="fa-solid fa-door-open"></i></div>
+                    <h3>Puertas y ventanas</h3>
+                    <p>Puertas interiores y exteriores en roble, pino o nogal, con el acabado que prefieras.</p>
+                </article>
+
+                <article class="servicio">
+                    <div class="servicio-icono"><i class="fa-solid fa-stairs"></i></div>
+                    <h3>Escaleras</h3>
+                    <p>Escaleras de madera resistentes y elegantes, pensadas para durar décadas.</p>
+                </article>
+
+                <article class="servicio">
+                    <div class="servicio-icono"><i class="fa-solid fa-bath"></i></div>
+                    <h3>Muebles de baño</h3>
+                    <p>Muebles tratados contra la humedad para que mantengan su belleza con el tiempo.</p>
+                </article>
+
+                <article class="servicio">
+                    <div class="servicio-icono"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Restauración</h3>
+                    <p>Devolvemos la vida a muebles antiguos respetando su carácter original.</p>
+                </article>
+            </div>
+
+            <a href="#contacto" class="btn btn-principal servicios-cta">Cuéntanos tu proyecto</a>
         </section>
         <!--Galería de fotos-->
-        <div class="carruselCont" id="galeria">
-            <h1>Galería de fotos</h1>
-            <article class="carrusel">                
+        <section class="carruselCont" id="galeria">
+            <span class="seccion-etiqueta">Nuestro trabajo</span>
+            <h2 class="seccion-titulo">Galería de trabajos</h2>
+
+            <article class="carrusel">
                 <div class="pista">
-                    <img src="LogoAurgi.png" alt="">
-                    <img src="logoBueno.png" alt="">
-                    <img src="imagen4.jpg" alt="">
+                    <img src="LogoAurgi.png" alt="Descripción del trabajo 1">
+                    <img src="logoBueno.png" alt="Descripción del trabajo 2">
+                    <img src="imagen4.jpg" alt="Descripción del trabajo 3">
                 </div>
-                <button class="anterior">&#8249;</button>
-                <button class="siguiente">&#8250;</button>
+                <button class="anterior" aria-label="Imagen anterior">&#8249;</button>
+                <button class="siguiente" aria-label="Imagen siguiente">&#8250;</button>
             </article>
-        </div>
+        </section>
          <!--Sobre nosotros-->
-        <article class="presentEmpresa" id="about">
-            <section>
-                <h1>Sobre nosotros</h1>
-                <p>Aurgi es una empresa dedicada a la fabricación de muebles artesanales hechos a medida. Nos enorgullece ofrecer productos de alta calidad y un servicio personalizado a nuestros clientes.</p>
-                <article class="caracteristicas">
-                    <ul>
-                        <li>
-                            Estamos ubicados en Arjona, Jaén
-                        </li>
-                        <li>
-                            Productos de alta calidad y durabilidad
-                        </li>
-                        <li>
-                            Contamos con un equipo de profesionales altamente capacitados
-                        </li>
-                        <li>
-                            Ofrecemos un servicio personalizado y atención al cliente excepcional
-                        </li>
-                        <li>
-                            Nos comprometemos con la sostenibilidad y el respeto al medio ambiente
-                        </li>
-                    </ul>
-                    <img src="imagen4.jpg" alt="Imagen de la empresa Aurgi" >
-                </article>
-            </section>
-        </article>
+        <!--Sobre nosotros-->
+        <section class="presentEmpresa" id="about">
+            <span class="seccion-etiqueta">Quiénes somos</span>
+            <h2 class="seccion-titulo">Sobre nosotros</h2>
+            <p class="seccion-intro">Aurgi es una empresa dedicada a la fabricación de muebles artesanales hechos a medida. Nos enorgullece ofrecer productos de alta calidad y un servicio personalizado a nuestros clientes.</p>
+
+            <div class="about-grid">
+                <ul class="about-lista">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Estamos ubicados en Arjona, Jaén</span></li>
+                    <li><i class="fa-solid fa-medal"></i><span>Productos de alta calidad y durabilidad</span></li>
+                    <li><i class="fa-solid fa-users"></i><span>Un equipo de profesionales altamente capacitados</span></li>
+                    <li><i class="fa-solid fa-handshake"></i><span>Servicio personalizado y atención al cliente excepcional</span></li>
+                    <li><i class="fa-solid fa-leaf"></i><span>Compromiso con la sostenibilidad y el medio ambiente</span></li>
+                </ul>
+                <img src="imagen4.jpg" alt="Taller de Aurgi">
+            </div>
+        </section>
     </main>
 
     <!--Contacto-->
     <footer id="contacto">
-        <article class="contactos">
-            <p><i class="fa-solid fa-envelope"></i>Email: mueblesaurgi@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot"></i>C/ Genil (Pol. Ind. Cruz de Piedra), Arjona, Jaén</p>
-        </article>
-        <img src="logoBueno.png" alt="Logo de Aurgi" width="250" height="120">
-        <article class="contactos">
-            <p><i class="fa-solid fa-phone"></i>Teléfono: 953 518 071</p>
-            <p>&copy; 2024 Aurgi. Todos los derechos reservados.</p>
-        </article>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:+34953518071">953 518 071</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:mueblesaurgi@gmail.com">mueblesaurgi@gmail.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Muebles+Aurgi+S+L+L/@37.9267811,-4.0603153,17z/data=!3m1!4b1!4m6!3m5!1s0xd6c355ce812816d:0x76a3441490661832!8m2!3d37.9267811!4d-4.0603153!16s%2Fg%2F1z44crtkd?entry=ttu&g_ep=EgoyMDI2MTEwOS4wIKXMDSoASAFQAw%3D%3D">C/ Genil (Pol. Ind. Cruz de Piedra), Arjona, Jaén</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-marca">
+                <img src="logoBueno.png" alt="Logo de Aurgi" width="250" height="100">
+            </div>
+
+            <div class="footer-col">
+                <h3>Horario</h3>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i><span>Lunes a viernes: 8:00 - 14:00 y 16:00 - 19:00</span></li>
+                    <li><i class="fa-solid fa-calendar-xmark"></i><span>Sábados y Domingos: cerrado</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">&copy; <span id="anio">2026</span> Aurgi. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
